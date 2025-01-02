@@ -1,0 +1,85 @@
+/* About.css */
+
+/* General Section Styles */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+h1 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+/* About Section */
+.about-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #f1c40f;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(18, 18, 18, 0.9);
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
+    transition: all 0.3s ease;
+}
+
+.about-details p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .about-details {
+        padding: 15px;
+    }
+
+    .about-details p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Hover Effects */
+.section:hover {
+    background-color: #121212;
+}
+
+h1:hover {
+    color: #ffd700;
+}
+
+p:hover {
+    color: #f1c40f;
+}
+
+.about-details:hover {
+    box-shadow: 0 0 30px rgba(241, 196, 15, 0.5);
+}

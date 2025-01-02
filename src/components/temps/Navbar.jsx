@@ -13,14 +13,14 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <h1> YourLogo </h1>
+                    <h1> Logo </h1>
                 </div>
                 <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-                    <Link to="home" onClick={toggleMenu}> Home </Link>
-                    <Link to="about" onClick={toggleMenu}> About </Link>
-                    <Link to="projects" onClick={toggleMenu}> Projects </Link>
-                    <Link to="skills" onClick={toggleMenu}> Skills </Link>
-                    <Link to="contact" onClick={toggleMenu}> Contact </Link>
+                    <Link to="home" smooth={true} onClick={toggleMenu}> Home </Link>
+                    <Link to="about" smooth={true} onClick={toggleMenu}> About </Link>
+                    <Link to="projects" smooth={true} onClick={toggleMenu}> Projects </Link>
+                    <Link to="skills" smooth={true} onClick={toggleMenu}> Skills </Link>
+                    <Link to="contact" smooth={true} onClick={toggleMenu}> Contact </Link>
                 </div>
                 <div className="navbar-toggle" onClick={toggleMenu}>
                     <div className={`bar ${isOpen ? 'open' : ''}`}> </div>
