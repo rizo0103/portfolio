@@ -1,0 +1,125 @@
+/* Projects Section Styles */
+.projects {
+    background-color: #121212;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+}
+
+.project-card {
+    width: 500px; /* Make cards wider */
+    height: 300px; /* Increase height for horizontal cards */
+    perspective: 1000px; /* 3D effect for flip */
+    margin-bottom: 30px; /* Adds space below each card */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+}
+
+.project-card:hover {
+    box-shadow: 0 12px 25px rgba(241, 196, 15, 0.5); /* Yellow shadow */
+}
+
+.project-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Enables 3D space for flip effect */
+    transition: transform 0.6s ease-in-out;
+}
+
+.project-card:hover .project-inner {
+    transform: rotateY(180deg); /* Flips the card on hover */
+}
+
+/* Front of the card */
+.project-front,
+.project-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ensures back side is hidden initially */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-front {
+    background-color: #1e1e1e;
+}
+
+.project-back {
+    background-color: #121212;
+    color: #fff;
+    transform: rotateY(180deg); /* Initially rotate the back side */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Back side content */
+.project-back h2 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.project-back p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project-back a {
+    color: #f1c40f;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-back a:hover {
+    color: #ffd700;
+    border-color: #ffd700;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .project-card {
+        width: 450px; /* Slightly smaller on medium screens */
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%; /* Full width but with some margin */
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* Full width on very small screens */
+        height: 230px;
+    }
+}

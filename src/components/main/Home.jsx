@@ -3,6 +3,7 @@ import React from 'react';
 import '../../styles/main/Home.css'; // Make sure you add styles here
 import { Link } from 'react-scroll';
 import About from './About';
+import Projects from './Projects';
 
 const Home = () => {
   return (
@@ -20,21 +21,7 @@ const Home = () => {
         <About />
 
         {/* Projects Section */}
-        <section id="projects" className="section projects">
-            <h1>My Projects</h1>
-            <div className="project-list">
-                <div className="project-card">
-                    <h2>Project 1</h2>
-                    <p>A brief description of your project.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <div className="project-card">
-                    <h2>Project 2</h2>
-                    <p>A brief description of another project.</p>
-                    <a href="#">View Project</a>
-                </div>
-            </div>
-        </section>
+        <Projects />
 
         {/* Skills Section */}
         <section id="skills" className="section skills">
