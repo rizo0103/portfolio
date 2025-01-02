@@ -1,0 +1,15 @@
+/* Section.css */
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+}
