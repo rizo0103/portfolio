@@ -140,29 +140,3 @@ p {
     color: #ffd700;
     border-color: #ffd700;
 }
-
-/* Custom Scrollbar Styles for WebKit Browsers */
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #1e1e1e;
-    border-radius: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #f1c40f;
-    border-radius: 10px;
-    border: 2px solid #121212;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-    background-color: #ffd700;
-}
-
-/* Custom Scrollbar Styles for Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #f1c40f #1e1e1e;
-}
