@@ -73,17 +73,17 @@ const Skills = () => {
             <div className="carousel-wrapper" ref={carouselRef}>
                 <div className="carousel">
                     {skills.concat(skills).map((skill, index) => ( // Duplicate array for smooth loop
-                    <div key={index} className="carousel-item">
-                        <div className="card">
-                            <div className="card-front">
-                                <img src={skill.image} alt={skill.name} />
-                                <h2>{skill.name}</h2>
-                            </div>
-                            <div className="card-back">
-                                <p>{skill.description}</p>
+                        <div key={index} className="carousel-item">
+                            <div className="card">
+                                <div className="card-front">
+                                    <img src={skill.image} alt={skill.name} />
+                                    <h2>{skill.name}</h2>
+                                </div>
+                                <div className="card-back">
+                                    <p>{skill.description}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     ))}
                 </div>
             </div>
