@@ -4,6 +4,7 @@ import '../../styles/main/Home.css'; // Make sure you add styles here
 import { Link } from 'react-scroll';
 import About from './About';
 import Projects from './Projects';
+import Skills from './Skills';
 
 const Home = () => {
   return (
@@ -24,18 +25,7 @@ const Home = () => {
         <Projects />
 
         {/* Skills Section */}
-        <section id="skills" className="section skills">
-            <h1> Skills </h1>
-            <ul>
-                <li> React.js </li>
-                <li> Node.js </li>
-                <li> JavaScript </li>
-                <li> CSS </li>
-                <li> HTML5 </li>
-                <li> MySQL </li>
-            </ul>
-        </section>
-
+        <Skills />
         {/* Contact Section */}
         <section id="contact" className="section contact">
             <h1>Contact Me</h1>
