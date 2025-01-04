@@ -12,7 +12,7 @@ const Projects = () => {
                     <div className="project-inner">
                         {/* Front side */}
                         <div className="project-front">
-                            <img src="/images/black-impulse.png" alt="Anime site" className="project-image" />
+                            <img src="/images/projects/black-impulse.png" alt="Anime site" className="project-image" />
                         </div>
                         {/* Back side */}
                         <div className="project-back" onClick={() => window.open("https://black-impulse.netlify.app", "_blank")}>
@@ -29,7 +29,7 @@ const Projects = () => {
                     <div className="project-inner">
                         {/* Front side */}
                         <div className="project-front">
-                            <img src="/images/eJournalAdminPanel.png" alt="eJournalAdminPanel" className="project-image" />
+                            <img src="/images/projects/eJournalAdminPanel.png" alt="eJournalAdminPanel" className="project-image" />
                         </div>
                         {/* Back side */}
                         <div className="project-back">

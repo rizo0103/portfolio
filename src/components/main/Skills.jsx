@@ -6,32 +6,32 @@ const skills = [
     {
         name: 'React',
         description: 'A JavaScript library for building user interfaces.',
-        image: '/images/react.png',
+        image: '/images/skills/react.png',
     },
     {
         name: 'Node.js',
         description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.',
-        image: '/images/nodeJS.png',
+        image: '/images/skills/nodeJS.png',
     },
     {
         name: 'JavaScript',
         description: 'A high-level, interpreted programming language.',
-        image: '/images/js.png',
+        image: '/images/skills/js.png',
     },
     {
         name: 'HTML5',
         description: 'Markup language for creating web pages.',
-        image: '/images/html.png',
+        image: '/images/skills/html.png',
     },
     {
         name: 'CSS3',
         description: 'Style sheet language used for describing the presentation of a document.',
-        image: '/images/css.png',
+        image: '/images/skills/css.png',
     },
     {
         name: 'MongoDB',
         description: 'NoSQL database for high-volume data storage.',
-        image: '/images/mongoDB.png',
+        image: '/images/skills/mongoDB.png',
     },
 ];
 
@@ -69,7 +69,7 @@ const Skills = () => {
   
     return (
         <section id="skills" className="skills">
-            <h1>Skills</h1>
+            <h1> Skills </h1>
             <div className="carousel-wrapper" ref={carouselRef}>
                 <div className="carousel">
                     {skills.concat(skills).map((skill, index) => ( // Duplicate array for smooth loop
@@ -77,10 +77,10 @@ const Skills = () => {
                             <div className="card">
                                 <div className="card-front">
                                     <img src={skill.image} alt={skill.name} />
-                                    <h2>{skill.name}</h2>
+                                    <h2> {skill.name} </h2>
                                 </div>
                                 <div className="card-back">
-                                    <p>{skill.description}</p>
+                                    <p> {skill.description} </p>
                                 </div>
                             </div>
                         </div>
