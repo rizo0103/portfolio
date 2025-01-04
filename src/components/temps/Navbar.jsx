@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <h1> Logo </h1>
+                    <h1> Shokiri Muhammadrizo </h1>
                 </div>
                 <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
                     <Link to="home" smooth={true} onClick={toggleMenu}> Home </Link>
