@@ -11,12 +11,12 @@ const skills = [
     {
         name: 'Node.js',
         description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.',
-        image: '/images/skills/nodeJS.png',
+        image: '/image/skills/nodeJS.png',
     },
     {
         name: 'JavaScript',
         description: 'A high-level, interpreted programming language.',
-        image: '/images/skills/js.png',
+        image: './images/skills/js.png',
     },
     {
         name: 'HTML5',
