@@ -11,7 +11,7 @@ const skills = [
     {
         name: 'Node.js',
         description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.',
-        image: '/image/skills/nodeJS.png',
+        image: '/images/skills/nodeJS.png',
     },
     {
         name: 'JavaScript',

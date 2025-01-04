@@ -1,85 +1,93 @@
-/* About.css */
-
 /* General Section Styles */
 .section {
     padding: 100px 20px;
-    text-align: center;
     background-color: #1e1e1e;
-    transition: all 0.5s ease;
-    cursor: default;
-}
-
-h1 {
-    color: #f1c40f;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    transition: color 0.3s ease;
-}
-
-p {
     color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    transition: color 0.3s ease;
+    overflow: hidden;
 }
 
-/* About Section */
-.about-details {
-    max-width: 800px;
-    margin: 0 auto;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* Ensures responsive wrapping */
+}
+
+/* Left Side: Information */
+.about-info {
+    max-width: 600px;
     text-align: left;
-    border: 1px solid #f1c40f;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(18, 18, 18, 0.9);
-    box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
-    transition: all 0.3s ease;
 }
 
-.about-details p {
-    color: #ddd;
-    font-size: 1rem;
-    line-height: 1.8;
+.about-info h1 {
+    color: #f1c40f;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Right Side: Photo */
+.about-photo {
+    flex-shrink: 0;
+}
+
+.photo-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f1c40f, #1e1e1e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* Space for the name */
+}
+
+.photo-container:hover {
+    box-shadow: 0 0 30px rgba(241, 196, 15, 0.8);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.photo {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo-container+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f1c40f;
+    font-family: 'FuturisticFont', sans-serif;
+    /* Replace with your desired font */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .section {
-        padding: 50px 10px;
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    h1 {
-        font-size: 2rem;
+    .photo-container {
+        width: 200px;
+        height: 200px;
     }
 
-    p {
-        font-size: 1rem;
+    .photo-container h2 {
+        font-size: 1.2rem;
     }
-
-    .about-details {
-        padding: 15px;
-    }
-
-    .about-details p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Hover Effects */
-.section:hover {
-    background-color: #121212;
-}
-
-h1:hover {
-    color: #ffd700;
-}
-
-p:hover {
-    color: #f1c40f;
-}
-
-.about-details:hover {
-    box-shadow: 0 0 30px rgba(241, 196, 15, 0.5);
 }
