@@ -28,6 +28,9 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url('../../../public/images/temps/shit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero h1 {
