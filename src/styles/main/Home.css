@@ -44,6 +44,12 @@ p {
     margin-bottom: 30px;
 }
 
+.hero-content {
+    border-radius: 15px;
+    filter: drop-shadow(0 0 100px #f10f87);
+}
+
+
 .cta-button {
     background-color: #f1c40f;
     color: #121212;
@@ -52,6 +58,7 @@ p {
     text-decoration: none;
     border-radius: 30px;
     transition: background 0.3s ease;
+    cursor: pointer;
 }
 
 .cta-button:hover {

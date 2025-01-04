@@ -12,7 +12,7 @@ const Home = () => {
         {/* Hero Section */}
         <section id="home" className="section hero">
             <div className="hero-content">
-                <h1> Welcome to My Portfolio </h1>
+                <h1> Welcome to My portfolio! </h1>
                 <p> I am a passionate Web Developer, specializing in front-end and back-end development. </p>
                 <Link smooth={true} duration={500} to="about" className="cta-button"> Learn More About Me </Link>
             </div>
