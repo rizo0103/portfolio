@@ -47,7 +47,7 @@ p {
 
 .hero-content {
     border-radius: 15px;
-    filter: drop-shadow(0 0 100px #f10f87);
+    filter: drop-shadow(-10px 0 60px #f10f87);
 }
 
 
