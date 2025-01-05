@@ -36,7 +36,6 @@ const About = () => {
                     <div className="photo-container">
                         <img src="/images/me-no-bg.png" alt="Your Name" className="photo" />
                     </div>
-                    <h2> Muhammadrizo </h2>
                 </div>
             </div>
         </section>
