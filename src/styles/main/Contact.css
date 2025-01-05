@@ -1,0 +1,92 @@
+.contact-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(241, 196, 15, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.contact-divider {
+    height: 3px;
+    background: #f1c40f;
+    width: 70px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.form-input:focus {
+    border-bottom: 1px solid rgba(241, 196, 15, 1);
+    box-shadow: 0 4px 20px rgba(241, 196, 15, 0.5);
+}
+
+textarea.form-input {
+    resize: none;
+}
+
+.form-button {
+    background: #f1c40f;
+    color: #000;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-button:hover {
+    background: #ffd700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(241, 196, 15, 0.6);
+}
