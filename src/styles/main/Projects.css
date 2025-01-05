@@ -1,7 +1,7 @@
 /* Projects Section Styles */
 .projects {
     background-color: #121212;
-    min-height: 100vh;
+    height: 100%;
     padding: 50px 20px;
 }
 
