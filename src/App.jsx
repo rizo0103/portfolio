@@ -5,6 +5,7 @@ import Home from "./components/main/Home";
 import Navbar from "./components/temps/Navbar";
 import './styles/main/Home.css';
 import './App.css';
+import Footer from "./components/temps/Footer";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
