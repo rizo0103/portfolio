@@ -10,12 +10,10 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm(
-                "service_gxm7td7", // Replace with your EmailJS Service ID
-                "template_vfvpiya", // Replace with your EmailJS Template ID
-                form.current,
-                "LpVkZ8rI3q7yO8J8n" // Replace with your EmailJS User ID
-            ).then(
+            .sendForm("service_gxm7td7", "template_vfvpiya", form.current, {
+                publicKey: 
+                "LpVkZ8rI3q7yO8J8n"
+            }).then(
                 (result) => {
                     alert("Message Sent Successfully!");
                 },
